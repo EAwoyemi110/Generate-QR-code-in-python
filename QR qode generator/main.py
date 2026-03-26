@@ -21,3 +21,10 @@ Label(window, text="Let's make a qr code!", font='arial 15').pack()
 
 #---Create a window
 
+s = StringVar()
+
+def create_qrcode():
+    s1=s.get()
+    qr = pyqrcode.create(s1)
+    qr.png('myqr.png', scale = 6)
+    Label(window,text='QR Code is created and saved.').pack()
