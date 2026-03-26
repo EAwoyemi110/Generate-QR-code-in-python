@@ -16,7 +16,7 @@ window.geometry('400x450')
 
 window.title('PythonGeeks')
 
-Label(window, text="Let's make a qr code!" font='arial 15').pack()
+Label(window, text="Let's make a qr code!", font='arial 15').pack()
 
 
 #---Create a window
